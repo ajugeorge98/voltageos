@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    The following patches are required to make a functional LineageOS build:
+    > repopick 430223 # sdm: color_manager: leave ddr_version out of PPHWAttributes
+-->
+<manifest>
+    <remote name="github-local"
+            fetch="https://www.github.com"
+            revision="lineage-23.2" />
+
+    <!-- device -->
+    <project path="device/nubia/cerro" name="nubia-sm8650-devs/android_device_nubia_cerro" remote="github-local" />
+    <project path="device/nubia/sm8650-common" name="nubia-sm8650-devs/android_device_nubia_sm8650-common" remote="github-local" />
+    <project path="device/nubia/tiro" name="nubia-sm8650-devs/android_device_nubia_tiro" remote="github-local" />
+
+    <!-- kernel-->
+    <project path="kernel/nubia/sm8650" name="nubia-sm8650-devs/android_kernel_nubia_sm8650" remote="github-local" />
+    <project path="kernel/nubia/sm8650-devicetrees" name="nubia-sm8650-devs/android_kernel_nubia_sm8650-devicetrees" remote="github-local" />
+    <project path="kernel/nubia/sm8650-modules" name="nubia-sm8650-devs/android_kernel_nubia_sm8650-modules" remote="github-local" />
+
+    <!-- vendor -->
+    <project path="vendor/nubia/cerro" name="nubia-sm8650-devs/proprietary_vendor_nubia_cerro" remote="github-local" />
+    <project path="vendor/nubia/sm8650-common" name="nubia-sm8650-devs/proprietary_vendor_nubia_sm8650-common" remote="github-local" />
+    <project path="vendor/nubia/tiro" name="nubia-sm8650-devs/proprietary_vendor_nubia_tiro" remote="github-local" />
+</manifest>
